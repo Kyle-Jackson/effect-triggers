@@ -35,6 +35,12 @@ div {
 
   background-color: limegreen;
   opacity: 0;
+
+  transition: 1s ease;
+}
+
+.show {
+  opacity: 1;
 }
 
 .diamond {
@@ -44,7 +50,16 @@ div {
   width: 80px;
 
   background-color: hotpink;
-  transform: rotate(45deg);
+  animation: none 2s ease;
+}
+
+@keyframes diamond {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-150, 0); }
+}
+
+.move {
+  animation-name: move;
 }
 
 .panel {
