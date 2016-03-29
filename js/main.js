@@ -3,5 +3,5 @@ $('.btn-show-hide').on('click', function (e) {
 });
 
 $('.btn-move').on('click', function (e) {
-  $('.diamond').toggleClass('move');
+  $('.diamond').toggleClass('slide');
 });

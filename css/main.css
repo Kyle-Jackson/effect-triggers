@@ -48,18 +48,19 @@ div {
   right: -100px;
   top: calc(50% - 40px);
   width: 80px;
+  transform: rotate(45deg);
 
   background-color: hotpink;
-  animation: none 2s ease;
+  transition: all 1s ease;
 }
 
 @keyframes diamond {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(-150, 0); }
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(-150px, 0px); }
 }
 
-.move {
-  animation-name: move;
+.slide {
+  right: 50px;
 }
 
 .panel {
